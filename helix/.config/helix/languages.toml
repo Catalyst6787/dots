@@ -1,3 +1,6 @@
+[language-server.wakatime]
+command = "wakatime-ls"
+
 [[language]]
 name = "rust"
-language-servers = [ "rust-analyzer", "wakatime-ls" ]
+language-servers = [ "rust-analyzer", "wakatime" ]
