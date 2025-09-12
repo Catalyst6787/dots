@@ -1,6 +1,15 @@
-[language-server.wakatime]
-command = "wakatime-ls"
+[language-server.iwe]
+command = "iwes"
 
 [[language]]
-name = "rust"
-language-servers = [ "rust-analyzer", "wakatime" ]
+name = "markdown"
+language-servers = ["iwe"]
+auto-format = true
+
+[[language]]
+name = "c"
+scope = "source.c"
+injection-regex = "c"
+file-types = ["c"]
+indent = { tab-width = 2, unit = "\t" }
+language-servers = [ "clangd" ]
